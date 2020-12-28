@@ -1,16 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:todo/models/task_data.dart';
 import 'package:todo/utils/constants.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  final Function newAddedTask;
-
-  AddTaskScreen(this.newAddedTask);
-
   @override
   Widget build(BuildContext context) {
     String _taskName;
-    String errorMessage = 'Please enter task';
 
     return Container(
       color: Color(0xff757575),
@@ -53,7 +50,11 @@ class AddTaskScreen extends StatelessWidget {
                 ),
                 onPressed: () {
                   if (_taskName != null) {
-                    newAddedTask(_taskName);
+                    Provider.of<TaskData>(
+                      context,
+                      listen: false,
+                    ).addNewTask(_taskName);
+                    // newAddedTask(_taskName);
                     Navigator.pop(context);
                   }
                 },

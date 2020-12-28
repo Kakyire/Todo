@@ -1,16 +1,7 @@
-# todo
+# Todo
 
-A new Flutter application.
+Simple Todo application to that implement how  to use Provider state management.
 
-## Getting Started
+![Add new task](https://user-images.githubusercontent.com/47930771/103239188-b3518500-4944-11eb-804a-d0017755305d.png)
+![Todo list](https://user-images.githubusercontent.com/47930771/103239194-b77da280-4944-11eb-8442-fcd2ef56c89d.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
